@@ -32,6 +32,7 @@ h1 {
 nav ul {
     list-style: none;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     gap: 10px;
     align-items: center;
@@ -63,7 +64,7 @@ h2 {
     color: #795336;
 }
 
-H3 {
+h3 {
     font-size: 1.2rem;
     margin-bottom: 8px;
     color: #795336;
@@ -90,7 +91,7 @@ figcaption {
 }
 
 .product-card {
-    border: 1px solid #ffffff;
+    border: 1px solid #c4400380;
     padding: 20px;
     border-radius: 8px;
     background-color: #fff4e6;
@@ -115,24 +116,27 @@ form {
 }
 
 fieldset {
-    border: 1px solid #8b5e3c;
+    border: 1px solid #c4400380;
     padding: 15px;
     border-radius: 8px;
     margin-bottom: 20px;
 }
- legend {
+
+legend {
     font-weight: bold;
     color: #8b5e3c;
  }
- label {
+
+label {
     display: block;
     margin-top: 15px;
     margin-bottom: 5px;
     font-weight: bold;
  }
 
- input,
- textarea {
+input,
+textarea, 
+select {
     width: 100%;
     padding: 10px;
     border: 1px solid #8b5e3c;
@@ -140,7 +144,7 @@ fieldset {
     font: inherit;
  }
 
- button {
+button {
     background-color: #8b5e3c;
     color: #fff8f0;
     border: none;
@@ -158,16 +162,16 @@ fieldset {
 
     video,
     audio {
-        max-width: 100%;
+        width: 100%;
+        max-width: 500px;
         margin: 15px 0;
     }
 
     @media (min-width: 768px) {
         nav ul {
             flex-direction: row;
-            justify-content: flex-start;
+            justify-content: center;
         }
-    }
     .products {
     flex-direction: row;
         flex-wrap: wrap;
@@ -175,3 +179,5 @@ fieldset {
     .product-card {
         flex: 1 1 250px;
     }
+
+}
