@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff8f0;
+    color: #3b3a21;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #8b5e3c;
+    color:#fff8f0;
+    padding: 20px;
+    text-align: center;
+}
+
+header img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+nav a {
+    color: #fff8f0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #795336;
+}
+
+H3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: #795336;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+figure {
+    margin: 20px 0;
+}
+
+figcaption {
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-top: 8px;
+}
+
+.product-card {
+    border: 1px solid #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff4e6;
+    margin-bottom: 20px;
+}
+
+.product-card img {
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form {
+    background-color: #fff4e6;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+fieldset {
+    border: 1px solid #8b5e3c;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+ legend {
+    font-weight: bold;
+    color: #8b5e3c;
+ }
+ label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+ }
+
+ input,
+ textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #8b5e3c;
+    border-radius: 4px;
+    font: inherit;
+ }
+
+ button {
+    background-color: #8b5e3c;
+    color: #fff8f0;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 15px;
+ }
+
+    button:hover {
+        background-color: #a67c52;
+    }
+
+    video,
+    audio {
+        max-width: 100%;
+        margin: 15px 0;
+    }
+
+    @media (min-width: 768px) {
+        nav ul {
+            flex-direction: row;
+            justify-content: flex-start;
+        }
+    }
+    .products {
+    flex-direction: row;
+        flex-wrap: wrap;
+    }   
+    .product-card {
+        flex: 1 1 250px;
+    }
