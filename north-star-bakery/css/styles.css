@@ -169,16 +169,40 @@ fieldset {
         margin-top: 5px;
     }
 
-    @media (min-width: 768px) {
-        nav ul {
-            flex-direction: row;
-            justify-content: flex-start;
-        }
+    .favorites-section {
+    background-color: #fff4e6;
+    border: 1px solid #8b5e3c;
+    border-radius: 8px;
+    margin: 30px 0;
+    padding: 20px;
+}
+
+#favorites-list {
+    margin-left: 20px;
+    line-height: 1.8;
+}
+
+.favorite-btn {
+    background-color: #8b5e3c;
+    color: #fff8f0;
+}
+
+.favorite-btn:hover {
+    background-color: #a67c52;
+}
+
+@media (min-width: 768px) {
+    nav ul {
+        flex-direction: row;
+        justify-content: flex-start;
     }
+
     .products {
-    flex-direction: row;
+        flex-direction: row;
         flex-wrap: wrap;
-    }   
+    }
+
     .product-card {
         flex: 1 1 250px;
     }
+}
