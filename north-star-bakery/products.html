@@ -46,10 +46,13 @@
             </p>
             
             <p>Price range: $5 - $10</p>
+            <button class="favorite-btn" data-product="Baked Bread">
+                Add to Favorites
+            </button>
             </article>
         </section>
 
-      <section class="products">
+        <section class="products">
             <article class="product-card">
             <h2>Pastries</h2>
 
@@ -58,10 +61,13 @@
             </p>
 
             <p>Price range: $3 - $7</p>
+            <button class="favorite-btn" data-product="Pastries">
+                Add to Favorites
+            </button>
             </article>
         </section>
 
-       <section class="products">
+        <section class="products">
             <article class="product-card">
             <h2>Cakes</h2>
             
@@ -71,7 +77,10 @@
             </p>
 
             <p>Price range: $30 - $85</p>
-           </article>     
+            <button class="favorite-btn" data-product="Cakes">
+                Add to Favorites
+            </button>
+            </article>     
         </section>
 
         <section class="products">
@@ -89,17 +98,24 @@
                 </figure>
 
                 <p>Price: $8 per loaf</p>
+                <button class="favorite-btn" data-product="Signature Loaf">
+                Add to Favorites
+                </button>
             </article>
         </section>
+        <section class="favorites-section">
+            <h2>Your Favorites</h2>
+            <p id="empty-favorites">You haven't selected any favorites yet.</p>
+            <ul id="favorites-list"></ul>
+        </section>
 
-       
 
     </main>
 
     <footer>
         <p>&copy; 2026 North Star Bakery</p>
     </footer>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
