@@ -120,27 +120,27 @@ fieldset {
     border-radius: 8px;
     margin-bottom: 20px;
 }
- legend {
+    legend {
     font-weight: bold;
     color: #8b5e3c;
- }
- label {
+    }
+    label {
     display: block;
     margin-top: 15px;
     margin-bottom: 5px;
     font-weight: bold;
- }
+    }
 
- input,
- textarea {
+    input,
+    textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #8b5e3c;
     border-radius: 4px;
     font: inherit;
- }
+    }
 
- button {
+    button {
     background-color: #8b5e3c;
     color: #fff8f0;
     border: none;
@@ -150,7 +150,7 @@ fieldset {
     text-transform: uppercase;
     font-weight: bold;
     margin-top: 15px;
- }
+    }
 
     button:hover {
         background-color: #a67c52;
@@ -160,6 +160,13 @@ fieldset {
     audio {
         max-width: 100%;
         margin: 15px 0;
+    }
+
+    .error-message {
+        color: #b00020;
+        display:block;
+        font-size: 0.9rem;
+        margin-top: 5px;
     }
 
     @media (min-width: 768px) {

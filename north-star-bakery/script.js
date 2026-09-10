@@ -25,16 +25,19 @@ function toggleFavorite(productName, button) {
                 return product !== productName;
             });
 
-            button.textContent = "Add to favorites";
+            button.textContent = "Add to Favorites";
         } else {
             favorites.push(productName);
             button.textContent = "Remove from Favorites";
         }
-        localStorage.setItem("bakeryFavorites, JSON.stringify(favorites"));
+        localStorage.setItem("bakeryFavorites", JSON.stringify(favorites));
         updateFavoritesDisplay();
     }
 
     favoriteButtons.forEach(function(button) {
+        if (favorites.includes(button.dataset.product)){
+            button.textContent= "Remove from Favorites";
+        }
         button.addEventListener("click", function () {
             const productName= button.dataset.product;
             toggleFavorite(productName, button);
