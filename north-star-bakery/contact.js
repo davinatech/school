@@ -12,6 +12,8 @@ const validationRules = {
     minimumDetailsLength: 10
 };
 
+const validation
+
 function validateName() {
     const name = nameInput.value.trim();
 
