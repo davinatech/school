@@ -4,6 +4,10 @@ A responsive multi-page bakery website built as a web development project using 
 
 🌐 **Live Demo:** https://davinatech.github.io/school/north-star-bakery/
 
+## Preview
+
+![North Star Bakery Website](north-star-bakery/assets/north-star-bakery-preview.png)
+
 ## About the Project
 
 North Star Bakery is a responsive client-style website designed to provide a warm, approachable browsing experience across desktop and mobile devices.
