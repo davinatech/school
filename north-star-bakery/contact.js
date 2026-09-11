@@ -12,14 +12,17 @@ const validationRules = {
     minimumDetailsLength: 10
 };
 
-const validation
+const validationMessages = {
+    name: "Please enter at least 2 characters for your name.",
+    email:"Please enter a valid email address.",
+    details:"Please enter at least 10 characters about your request."
+};
 
-function validateName() {
+    function validateName() {
     const name = nameInput.value.trim();
 
-if (name.length < validationRules.minimumNameLength) {
-    nameError.textContent =
-    "Please enter at least 2 characters for your name.";
+if (name.length < validationRules.minimumNameLength)  {
+    nameError.textContent = validationMessages.name;
     return false;
 }
 
@@ -29,7 +32,7 @@ if (name.length < validationRules.minimumNameLength) {
 
 function validateEmail() {
     if (!emailInput.validity.valid) {
-    emailError.textContent = "Please enter a valid email address.";
+    emailError.textContent = validationMessages.email;
     return false;
     }
 
@@ -41,8 +44,7 @@ function validateDetails() {
     const details = detailsInput.value.trim();
 
     if (details.length < validationRules.minimumDetailsLength) {
-    detailsError.textContent =
-    "Please enter at least 10 characters about your request.";
+    detailsError.textContent = validationMessages.details;
     return false;
     }
 
